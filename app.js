@@ -50,3 +50,14 @@ function checkPrime(num) {
 }
 
 console.log(checkPrime(13));
+// Determine if a string is a palindrome
+function checkPalindrome(str) {
+    let reversedStr = str.split('').reverse().join('');
+    if (str === reversedStr) {
+        return "Palindrome";
+    } else {
+        return "Not a Palindrome";
+    }
+}
+
+console.log(checkPalindrome(""));
